@@ -1,0 +1,20 @@
+
+public class TestandoGerente {
+
+	public static void main(String[] args) {
+		Gerente matheus1 = new Gerente();
+		
+		matheus1.setNome("Matheus Galvão");
+		matheus1.setCpf("789.456.123-12");
+		matheus1.setSalario(5200);
+		
+		System.out.println(matheus1.getNome());
+		System.out.println(matheus1.getCpf());
+		System.out.println(matheus1.getSalario());
+		
+		boolean autenticar = matheus1.autentica(1234);
+		System.out.println(autenticar);
+
+	}
+
+}

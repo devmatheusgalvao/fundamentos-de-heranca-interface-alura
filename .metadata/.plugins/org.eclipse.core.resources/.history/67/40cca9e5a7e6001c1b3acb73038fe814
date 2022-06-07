@@ -1,0 +1,9 @@
+
+public class TestandoFuncionario {
+
+	public static void main(String[] args) {
+		
+		Funcionario matheus = new Funcionario();
+	}
+
+}
