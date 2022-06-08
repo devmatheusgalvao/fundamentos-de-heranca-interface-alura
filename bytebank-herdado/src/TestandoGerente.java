@@ -20,6 +20,9 @@ public class TestandoGerente {
 		matheus1.setSenha(1234);
 		boolean autenticar = matheus1.autentica(1234);
 		System.out.println(autenticar);
+		
+		//Testando a bonificação
+		System.out.println(matheus1.getBonificacao());
 
 	}
 

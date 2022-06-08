@@ -19,8 +19,10 @@ public class Gerente extends Funcionario {
 		
 		//GETTERS AND SETTERS
 		//Get de Bonificação de salário
-	//	public double getBonificacao() {
-	//		return this.salario;
-	//	}
+		
+		public double getBonificacao() {
+			return super.getBonificacao() + super.getSalario();   
+			//podemos aproveitar os métodos da classe mãe usando "super"
+		}
 		
 }
