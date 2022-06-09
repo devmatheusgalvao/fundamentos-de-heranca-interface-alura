@@ -10,7 +10,7 @@ public class Funcionario {
 	//GETTERS AND SETTERS
 	//Get de Bonificação de 10%
 	public double getBonificacao() {
-		return this.salario * 0.1;
+		return this.salario * 0.05;
 	}
 	
 	//Demais getters e setters
