@@ -1,8 +1,8 @@
 
 
-public class Conta {
+public abstract class Conta {
 
-    private double saldo;
+    protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
@@ -18,10 +18,9 @@ public class Conta {
         System.out.println("Estou criando uma conta " + this.numero);
     }
 
-    public void deposita(double valor) {
-        this.saldo = this.saldo + valor;
-    }
-
+    //apenas para exemplo, colocamos o deposita como abstrato. não faz muito sentido na lógica, mas é apenas para praticar.
+    public abstract void deposita(double valor);
+    
     public boolean saca(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;

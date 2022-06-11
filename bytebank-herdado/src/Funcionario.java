@@ -1,5 +1,6 @@
 
-public class Funcionario {
+// não podemos instanciar esse classe por ela ser abstrata
+public abstract class Funcionario {
 	
 	//primeiro, declaramos as informações dos funcionários
 	private String nome;
@@ -9,9 +10,9 @@ public class Funcionario {
 	
 	//GETTERS AND SETTERS
 	//Get de Bonificação de 10%
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	
+	// abstract no método significa que o método não tem corpo, não há implementação
+	public abstract double getBonificacao();
 	
 	//Demais getters e setters
 	public String getNome() {

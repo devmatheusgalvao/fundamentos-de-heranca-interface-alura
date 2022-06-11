@@ -4,7 +4,7 @@ public class TestandoFuncionario {
 	public static void main(String[] args) {
 		
 		//Criando um funcionário exemplo
-		Funcionario matheus = new Funcionario();
+		Gerente matheus = new Gerente();
 		
 		//Definindo as informações desse exemplo
 		matheus.setNome("Matheus Galvão");

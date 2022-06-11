@@ -7,10 +7,6 @@ public class TesteReferencias {
 		g1.setNome("Matheus Galvão");
 		g1.setSalario(5000);
 		
-		Funcionario f1 = new Funcionario();
-		f1.setNome("Ramon Almeida");
-		f1.setSalario(3200);
-		
 		EditorVideo ev1 = new EditorVideo();
 		ev1.setNome("Gianna de Jesus");
 		ev1.setSalario(2100);
@@ -22,7 +18,6 @@ public class TesteReferencias {
 		//quando chamamos um método que foi estabelecido utilizando a referência Funcionário, o método do objeto que é chamado
 		ControleBonifica controle = new ControleBonifica();
 		controle.registra(g1);
-		controle.registra(f1);
 		controle.registra(ev1);
 		controle.registra(d1);
 		

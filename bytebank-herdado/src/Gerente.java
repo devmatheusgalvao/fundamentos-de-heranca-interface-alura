@@ -21,7 +21,7 @@ public class Gerente extends Funcionario {
 		//Get de Bonificação de salário
 		
 		public double getBonificacao() {
-			return super.getBonificacao() + super.getSalario();   
+			return super.getSalario();   
 			//podemos aproveitar os métodos da classe mãe usando "super"
 		}
 		
