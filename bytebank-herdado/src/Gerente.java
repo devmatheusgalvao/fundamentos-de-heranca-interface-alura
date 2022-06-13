@@ -3,7 +3,11 @@
 public class Gerente extends Funcionario implements Autenticavel {
 	
 		
-		private int senha;
+		private AutenticacaoUtil util;
+
+		public Gerente() {
+			this.util = new AutenticacaoUtil();
+		}
 		
 		
 		//GETTERS AND SETTERS
@@ -16,16 +20,13 @@ public class Gerente extends Funcionario implements Autenticavel {
 
 		@Override
 		public void setSenha(int senha) {
-			this.senha = senha;				
+			this.util.setSenha(senha);		
 		}
 
 		@Override
 		public boolean autentica(int senha) {
-			if (this.senha == senha) {
-				return true;
-			} else {
-				return false;
-			}
+			boolean autenticou = this.util.autentica(senha);
+			return autenticou;
 		}
 		
 }
